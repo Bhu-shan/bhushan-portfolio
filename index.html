@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Bhushan Pawar Portfolio</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<style>
+    .experience-box {
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #0d6efd;
+}
+
+.experience-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -52px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background: #0d6efd;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.experience-item .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #0d6efd;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 28px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.experience-item .content h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience-item .content span {
+    display: block;
+    font-weight: 500;
+    color: #555;
+}
+
+.experience-item .content small {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.experience-item ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.experience-item ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.experience-item ul li i {
+    color: #0d6efd;
+    margin-right: 8px;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(13,110,253,0.6); }
+    70% { box-shadow: 0 0 0 10px rgba(13,110,253,0); }
+    100% { box-shadow: 0 0 0 0 rgba(13,110,253,0); }
+}
+
+.publication-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.publication-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.pub-icon {
+    width: 70px;
+    height: 70px;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.pub-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.pub-content p {
+    font-size: 14.5px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.pub-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.pub-btn:hover {
+    background: #084298;
+    color: #fff;
+}
+
+/* Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.4s ease;
+}
+
+/* Brand Colors */
+.social-icons a.linkedin {
+    background: #0077b5;
+}
+
+.social-icons a.github {
+    background: #24292e;
+}
+
+.social-icons a.whatsapp {
+    background: #25d366;
+}
+
+.social-icons a.instagram {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+/* Hover Effects */
+.social-icons li a:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/devops-logo-Photoroom.png" alt="logo">
+                                <span style="font-family: cursive; font-weight: bold;"> DevOps Engineer</span>
+                            </a> <!-- Logo -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#service">Project</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#experience">Experience</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#publications">Publication</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation -->
+
+        <div id="parallax" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="assets/images/banner/shape/shape-4.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="assets/images/banner/shape/shape-5.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/shape-6.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 class="sub-title">Hello, I’m</h4>
+                            <h1 class="title">Bhushan Pawar</h1>
+                            <p>A DevOps Engineer</p>
+                            <a class="main-btn" href="assets/images/work/UpdatedResume.pdf" target="_blank" download="Bhushan_Pawar_DevOps_Engineer_CV.pdf">Download CV/Resume</a>
+                        </div> <!-- header content right -->
+                    </div>
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="header-image d-none d-lg-block">
+                            <img src="assets/images/banner/profile-IMG.png" alt="hero">
+                        </div> <!-- header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+                                <ul class="social-icons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/bhushan-pawar-abb150248" target="_blank" class="linkedin">
+                                    <i class="lni lni-linkedin-original"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Bhu-shan" target="_blank" class="github">
+                                    <i class="lni lni-github-original"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/8459696850" target="_blank" class="whatsapp">
+                                    <i class="lni lni-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/pawar___bhushan" target="_blank" class="instagram">
+                                    <i class="lni lni-instagram-filled"></i>
+                                </a>
+                            </li>
+                        </ul>
+                            </div> <!-- header social -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header social -->
+        </div> <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">About Me</h2>
+                        <!-- <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p> -->
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50">
+                        <h5 class="about-title">Hi There! I'm Bhushan Pawar</h5>
+                        <p>I am a DevOps Engineer in Delta 360 Services Private Limited and I have 2 years of hand on Experience in Docker, Kubernetes, Jenkins, Terraform, Ansible, SonarQube, ArgoCD, Grafana, Helm and Some AWS Services. I have being responsible for to automate deployment using Docker Or Kubernetes , maintaining CI/CD Pipeline using Jenkins and increasing infrastructure relibility using terraform.</p>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-calendar"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Date of birth:</span> 29 January 2003</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-envelope"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Email:</span> bhushanpawar290103.com</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-phone-handset"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Phone:</span> +91-8459696850</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni-map-marker"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Location:</span> At. Post. Bordi. Amravati, Maharashtra 444806</p>
+                                    </div>
+                                </div> <!-- single info -->
+                            </li>
+                        </ul>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="about-skills pt-25">
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Docker</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">80</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Kubernetes</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">70</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Jenkins</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Terraform</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">70</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Ansible</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">80</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">AWS</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">60</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">DevSecOps</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">65</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="65"></div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- skill item -->
+                    </div> <!-- about skills -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+
+    <section id="service" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">My Project</h2>
+                        <!-- <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p> -->
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-code-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Kubernetes Deployment With Monitoring</a></h4>
+                            <p><span style="font-weight: bold;">Tools :</span> Kubernets, Docker, AWS EKS, Prometheus, Grafana, Git, GitHub</p>
+                            <p><span style="font-weight: bold;"> Organization :</span> Delta 360 Services Pvt. Ltd. </p>
+
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-vector"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Automated CI/CD Pipeline for Microservices on AWS EKS</a></h4>
+                            <p><span style="font-weight: bold;"> Tools :</span>AWS (EKS, EC2, IAM, VPC, S3, ECR), Jenkins, Docker, Kubernetes, Terraform, SonarQube, ArgoCD, Git/GitHub, Prometheus &  Grafana </p>
+                            <p><span style="font-weight: bold;"> Organization :</span> Delta 360 Services Pvt. Ltd. </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-website"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Infrastructure Automation Using Terraform and AWS</a></h4>
+                            <p><span style="font-weight: bold;"> Tools :</span>Terraform, AWS (EC2, S3, VPC, IAM), Jenkins, GitHubs, Linux</p>
+                            <p><span style="font-weight: bold;"> Organization :</span> Delta 360 Services Pvt. Ltd. </p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== CALL TO ACTION PART START ======-->
+
+    <!-- <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(assets/images/call-to-action.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="call-action-content text-center">
+                        <h2 class="action-title">You are Using Free Lite Version of Unfold</h2>
+                        <p>Please, purchase full version of Unfold to get all pages and features. Including credits removal, permission to use in commercial projects, working contact from, docs and support</p>
+                        <ul>
+                            <li><a class="main-btn custom" rel="nofollow" href="https://rebrand.ly/unfold-ud">Get Full Version</a></li>
+                            <li><a class="main-btn custom-2" rel="nofollow" href="https://rebrand.ly/unfold-ud">View Details</a></li>
+                        </ul>
+                    </div>  call action content -->
+                <!-- </div>
+            </div> 
+        </div> 
+    </section>  -->
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    <!--====== WORK PART START ======-->
+<section id="experience" class="experience-area pt-125 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="title">Work Experience</h2>
+                    <p class="text">My professional journey in DevOps & Cloud Engineering</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="experience-box mt-50">
+
+                    <div class="experience-item">
+                        <div class="icon">
+                            <i class="lni lni-cloud"></i>
+                        </div>
+                        <div class="content">
+                            <h5>DevOps Engineer</h5>
+                            <span>Delta 360 Services Pvt. Ltd, Noida</span>
+                            <small>December 2023 – Present</small>
+                            <ul>
+                                <li><i class="lni lni-checkmark-circle"></i> Designed CI/CD pipelines using Jenkins & GitHub Actions.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Automated build, test & deployment workflows.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Managed AWS services: EC2, S3, IAM, RDS & VPC.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Built Docker images & containers for microservices.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Deployed & managed Kubernetes clusters.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Provisioned infrastructure using Terraform (IaC).</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Integrated SonarQube, OWASP & GitLab for security and code quality.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Collaborated with developers to resolve build & deployment issues.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="publications" class="publications-area pt-125 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="title">Paper Publications</h2>
+                    <p class="text">My research contributions and published papers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-50">
+
+            <!-- Publication 1 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="lni lni-book"></i>
+                    </div>
+                    <div class="pub-content">
+                        <h5>Importance of Metaverse in Future</h5>
+                        <p>
+                            <strong>Conference:</strong> 10th International Conference on Indian Knowledge System,
+                            Science and Spirituality For Advancing Technology (IC-IKSAT-2K24)
+                        </p>
+                        <p>
+                            <strong>Date:</strong> 15–16 March 2024
+                        </p>
+                        <a href="certificates/metaverse-certificate.pdf" target="_blank" class="btn pub-btn">
+                            <i class="lni lni-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication 2 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="publication-card">
+                    <div class="pub-icon">
+                        <i class="lni lni-graduation"></i>
+                    </div>
+                    <div class="pub-content">
+                        <h5>Review of Text Summarization Techniques of Documents</h5>
+                        <p>
+                            <strong>Journal:</strong> International Journal of Creative Research Thoughts (IJCRT)
+                        </p>
+                        <p>
+                            <strong>ISSN:</strong> 2320-2882 |
+                            <strong>UGC Approval:</strong> 49023 (18)
+                        </p>
+                        <p>
+                            <strong>Publication Date:</strong> 08 March 2023 <br>
+                            <strong>Paper ID:</strong> IJCRT2303312
+                        </p>
+                        <a href="certificates/ijcrt-certificate.pdf" target="_blank" class="btn pub-btn">
+                            <i class="lni lni-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Get In Touch</h2>
+                        <!-- <p>Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo.</p> -->
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-map-marker"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Address</h6>
+                            <p>At. Post. Bordi Taluka Achalpur, Amravati, Maharashtra 444806</p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Phone</h6>
+                            <p>+91 8459696850</p>
+                            <p>+91 7741907011</p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p>bhushanpawar290103@gmail.com</p>
+                            <p>bp014216@gmail.com</p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form pt-30">
+                        <form id="contact-form" action="assets/contact.php">
+                            <div class="single-form">
+                                <input type="text" name="name" placeholder="Name">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <input type="email" name="email" placeholder="Email">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div> <!-- single form -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" type="submit">Send Message</button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map mt-60">
+                        <div class="gmap_canvas">
+                            <iframe 
+                                id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Bordi%20Gram%20Panchayat%20Achalpur%20Amravati%20Maharashtra%20India&z=15&output=embed&markers=color:red%7CBordi%20Gram%20Panchayat%20Achalpur%20Amravati%20Maharashtra%20India"
+                                frameborder="0"
+                                scrolling="no"
+                                marginheight="0"
+                                marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+    <div class="footer-widget pt-80 pb-80">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer About -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <a class="footer-logo" href="#home">
+                            <img src="assets/images/devops-logo.jpg" alt="logo">
+                            <span style="color: white;"> DevOps Engineer</span>
+                        </a>
+                        <p>
+                            DevOps Engineer with hands-on experience in CI/CD, Docker, Kubernetes,
+                            Terraform, AWS, and DevSecOps. Passionate about automation and cloud-native solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-link">
+                        <h4 class="footer-title" style="color: white">Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Projects</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#publications">Publications</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Social -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-social">
+                        <h4 class="footer-title" style="color: white; margin-bottom: 10px;">Connect With Me</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/bhushan-pawar-abb150248" target="_blank" class="linkedin">
+                                    <i class="lni lni-linkedin-original"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Bhu-shan" target="_blank" class="github">
+                                    <i class="lni lni-github-original"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/8459696850" target="_blank" class="whatsapp">
+                                    <i class="lni lni-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/pawar___bhushan" target="_blank" class="instagram">
+                                    <i class="lni lni-instagram-filled"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>
+                        © <span id="year"></span> Bhushan Pawar | DevOps Engineer. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== Validator js ======-->
+    <script src="assets/js/validator.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
