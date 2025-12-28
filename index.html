@@ -224,6 +224,105 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
+
+.edu-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.edu-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(120deg, #0d6efd, #6610f2);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.edu-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.edu-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    animation: rotateIcon 8s linear infinite;
+}
+
+.edu-icon.grad {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+}
+
+.edu-icon.hsc {
+    background: linear-gradient(135deg, #198754, #0f5132);
+}
+
+.edu-icon.ssc {
+    background: linear-gradient(135deg, #fd7e14, #b45309);
+}
+
+.edu-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.edu-card span {
+    font-size: 14px;
+    color: #555;
+}
+
+.edu-card p {
+    margin: 6px 0;
+    color: #666;
+}
+
+.edu-card small {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.edu-score {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0d6efd;
+}
+
+/* Unique Animation */
+@keyframes rotateIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#certificateImage {
+    max-height: 75vh;
+    transition: transform 0.3s ease;
+}
+
+#certificateImage:hover {
+    transform: scale(1.05);
+}
+
 </style>
 </head>
 
@@ -272,8 +371,9 @@
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#service">Project</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#education">Education</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="#experience">Experience</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#service">Project</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="#publications">Publication</a></li>
                                     <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
                                 </ul>
@@ -552,7 +652,107 @@
     </section>
 
     <!--====== ABOUT PART ENDS ======-->
+<section id="education" class="education-area pt-125 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="title">Education</h2>
+                    <p class="text">My academic qualifications</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="row mt-50">
+
+            <!-- Graduation -->
+            <div class="col-lg-4 col-md-6">
+                <div class="edu-card">
+                    <div class="edu-icon grad">
+                        <i class="lni lni-graduation"></i>
+                    </div>
+                    <h5>Bachelor’s Degree</h5>
+                    <span>B.E (CSE)</span>
+                    <p>Sant Gadge Baba University</p>
+                    <small>2020 – 2024</small>
+                    <div class="edu-score">CGPA: <strong>9.49 / 10</strong></div>
+                </div>
+            </div>
+
+            <!-- HSC -->
+            <div class="col-lg-4 col-md-6">
+                <div class="edu-card">
+                    <div class="edu-icon hsc">
+                        <i class="lni lni-book"></i>
+                    </div>
+                    <h5>Higher Secondary (HSC)</h5>
+                    <span>General Science Stream</span>
+                    <p>Maharashtra State Board</p>
+                    <small>2018 – 2020</small>
+                    <div class="edu-score">Percentage: <strong>62%</strong></div>
+                </div>
+            </div>
+
+            <!-- SSC -->
+            <div class="col-lg-4 col-md-6">
+                <div class="edu-card">
+                    <div class="edu-icon ssc">
+                        <i class="lni lni-pencil"></i>
+                    </div>
+                    <h5>Secondary School (SSC)</h5>
+                    <span>General Education</span>
+                    <p>Maharashtra State Board</p>
+                    <small>2017 – 2018</small>
+                    <div class="edu-score">Percentage: <strong>87.60%</strong></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!--====== WORK PART START ======-->
+<section id="experience" class="experience-area pt-125 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h2 class="title">Work Experience</h2>
+                    <p class="text">My professional journey in DevOps & Cloud Engineering</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="experience-box mt-50">
+
+                    <div class="experience-item">
+                        <div class="icon">
+                            <i class="lni lni-cloud"></i>
+                        </div>
+                        <div class="content">
+                            <h5>DevOps Engineer</h5>
+                            <span>Delta 360 Services Pvt. Ltd, Noida</span>
+                            <small>December 2023 – Present</small>
+                            <ul>
+                                <li><i class="lni lni-checkmark-circle"></i> Designed CI/CD pipelines using Jenkins & GitHub Actions.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Automated build, test & deployment workflows.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Managed AWS services: EC2, S3, IAM, RDS & VPC.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Built Docker images & containers for microservices.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Deployed & managed Kubernetes clusters.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Provisioned infrastructure using Terraform (IaC).</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Integrated SonarQube, OWASP & GitLab for security and code quality.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Collaborated with developers to resolve build & deployment issues.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!--====== SERVICES PART START ======-->
 
     <section id="service" class="services-area gray-bg pt-125 pb-130">
@@ -629,51 +829,31 @@
             </div> 
         </div> 
     </section>  -->
+<!-- Certificate Modal -->
+<div class="modal fade" id="certificateModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Publication Certificate</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img id="certificateImage"
+                     src=""
+                     alt="Certificate"
+                     class="img-fluid rounded shadow">
+            </div>
+
+        </div>
+    </div>
+</div>
 
     <!--====== CALL TO ACTION PART ENDS ======-->
 
-    <!--====== WORK PART START ======-->
-<section id="experience" class="experience-area pt-125 pb-130">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center">
-                    <h2 class="title">Work Experience</h2>
-                    <p class="text">My professional journey in DevOps & Cloud Engineering</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="experience-box mt-50">
-
-                    <div class="experience-item">
-                        <div class="icon">
-                            <i class="lni lni-cloud"></i>
-                        </div>
-                        <div class="content">
-                            <h5>DevOps Engineer</h5>
-                            <span>Delta 360 Services Pvt. Ltd, Noida</span>
-                            <small>December 2023 – Present</small>
-                            <ul>
-                                <li><i class="lni lni-checkmark-circle"></i> Designed CI/CD pipelines using Jenkins & GitHub Actions.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Automated build, test & deployment workflows.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Managed AWS services: EC2, S3, IAM, RDS & VPC.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Built Docker images & containers for microservices.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Deployed & managed Kubernetes clusters.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Provisioned infrastructure using Terraform (IaC).</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Integrated SonarQube, OWASP & GitLab for security and code quality.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Collaborated with developers to resolve build & deployment issues.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section id="publications" class="publications-area pt-125 pb-130">
     <div class="container">
@@ -703,9 +883,14 @@
                         <p>
                             <strong>Date:</strong> 15–16 March 2024
                         </p>
-                        <a href="certificates/metaverse-certificate.pdf" target="_blank" class="btn pub-btn">
+                        <a href="#" 
+                            class="btn pub-btn"
+                            data-toggle="modal"
+                            data-target="#certificateModal"
+                            data-cert="assets/images/work/Metaverse-certificate.jpeg">
                             <i class="lni lni-certificate"></i> View Certificate
-                        </a>
+                            </a>
+
                     </div>
                 </div>
             </div>
@@ -729,9 +914,13 @@
                             <strong>Publication Date:</strong> 08 March 2023 <br>
                             <strong>Paper ID:</strong> IJCRT2303312
                         </p>
-                        <a href="certificates/ijcrt-certificate.pdf" target="_blank" class="btn pub-btn">
+                        <a href="#" 
+                            class="btn pub-btn"
+                            data-toggle="modal"
+                            data-target="#certificateModal"
+                            data-cert="assets/images/work/TextDoc-certificate.jpg">
                             <i class="lni lni-certificate"></i> View Certificate
-                        </a>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -794,21 +983,38 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
+                        <form id="contact-form" autocomplete="off">
+
                             <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
-                            </div> <!-- single form -->
+                                <input type="text" name="name" placeholder="Name" required maxlength="30" minlength="3">
+                            </div>
+
                             <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
-                            </div> <!-- single form -->
+                                <input type="email" name="email" placeholder="Email" maxlength="40" required>
+                            </div>
+
                             <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div> <!-- single form -->
-                            <p class="form-message"></p>
+                                <textarea name="message"
+                                        placeholder="Message"
+                                        maxlength="100"
+                                        required></textarea>
+                            </div>
+
+                            <!-- 🛑 Honeypot field (bots will fill this, humans won't) -->
+                            <input type="text" name="company" style="display:none">
+
+                            <p id="form-message"></p>
+
                             <div class="single-form">
-                                <button class="main-btn" type="submit">Send Message</button>
-                            </div> <!-- single form -->
+                                <button class="main-btn" id="sendBtn" type="submit">
+                                    Send Message
+                                </button>
+                            </div>
                         </form>
+
+
+
+
                     </div> <!-- contact form -->
                 </div>
                 <div class="col-lg-6">
@@ -861,8 +1067,9 @@
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#service">Projects</a></li>
+                            <li><a href="#education">Education</a></li>
                             <li><a href="#experience">Experience</a></li>
+                            <li><a href="#service">Projects</a></li>
                             <li><a href="#publications">Publications</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -965,6 +1172,93 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+$('#certificateModal').on('show.bs.modal', function (event) {
+    const button = $(event.relatedTarget);
+    const certPath = button.data('cert');
+    const modal = $(this);
+    modal.find('#certificateImage').attr('src', certPath);
+});
+</script>
+
+
+<script>
+(function(){
+    emailjs.init("_3psUPBhUNn2xs56w"); // safe to expose
+})();
+</script>
+
+<script>
+const form = document.getElementById("contact-form");
+const messageBox = document.getElementById("form-message");
+const sendBtn = document.getElementById("sendBtn");
+
+let lastSubmitTime = 0; // rate-limit
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const now = Date.now();
+    if (now - lastSubmitTime < 15000) { // 15 sec limit
+        messageBox.textContent = "Please wait before sending again.";
+        messageBox.style.color = "red";
+        return;
+    }
+
+    // Get values
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+    const honeypot = form.company.value;
+
+    // 🛑 Honeypot check (bot detected)
+    if (honeypot !== "") {
+        return; // silently block
+    }
+
+    // 🛑 Strict validation
+    if (!name || !email || !message) {
+        messageBox.textContent = "All fields are mandatory.";
+        messageBox.style.color = "red";
+        return;
+    }
+
+    if (message.length > 50) {
+        messageBox.textContent = "Message must be 50 characters or less.";
+        messageBox.style.color = "red";
+        return;
+    }
+
+    // Disable button (prevent spam)
+    sendBtn.disabled = true;
+    sendBtn.textContent = "Sending...";
+
+    emailjs.sendForm(
+        "service_yxvrz5f",
+        "template_3va5ebf",
+        form
+    )
+    .then(() => {
+        messageBox.textContent = "Message sent successfully!";
+        messageBox.style.color = "green";
+        form.reset();
+        lastSubmitTime = now;
+    })
+    .catch(() => {
+        messageBox.textContent = "Failed to send message. Try again later.";
+        messageBox.style.color = "red";
+    })
+    .finally(() => {
+        sendBtn.disabled = false;
+        sendBtn.textContent = "Send Message";
+    });
+});
+</script>
 
 </body>
 
